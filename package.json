@@ -1,0 +1,16 @@
+{
+  "name": "examplenet",
+  "module": "App/index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@inertiajs/react": "^1.0.14",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
