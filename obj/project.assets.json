@@ -1,11 +1,94 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "INERTIAJS.ASPNETCORE.ADAPTER/0.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/InertiaAdapter.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/InertiaAdapter.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Vite.AspNetCore/1.11.0": {
+        "type": "package",
+        "dependencies": {
+          "Vite.AspNetCore.Abstractions": "1.1.0"
+        },
+        "compile": {
+          "lib/net6.0/Vite.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Vite.AspNetCore.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Vite.AspNetCore.Abstractions/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Vite.AspNetCore.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Vite.AspNetCore.Abstractions.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "INERTIAJS.ASPNETCORE.ADAPTER/0.0.4": {
+      "sha512": "Jg58FpZtOeRp78mim1xyQcn7fUJU+P+ZzDY5iRdgEidJtA+aQgjaeaahHbolI5OI4HQTVYXUqMAjgL54to83rg==",
+      "type": "package",
+      "path": "inertiajs.aspnetcore.adapter/0.0.4",
+      "files": [
+        ".nupkg.metadata",
+        "LICENSE",
+        "README.md",
+        "inertiajs.aspnetcore.adapter.0.0.4.nupkg.sha512",
+        "inertiajs.aspnetcore.adapter.nuspec",
+        "lib/net6.0/InertiaAdapter.dll"
+      ]
+    },
+    "Vite.AspNetCore/1.11.0": {
+      "sha512": "49SNXUKC62yqzgIc+RN6Z3HIZvO5yISDym1xD9ObE+3SqNn+YtiVsyJvM8V2NC5AGVihAowzRLl2GdpSG9xouw==",
+      "type": "package",
+      "path": "vite.aspnetcore/1.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "lib/net6.0/Vite.AspNetCore.dll",
+        "vite.aspnetcore.1.11.0.nupkg.sha512",
+        "vite.aspnetcore.nuspec",
+        "vite.png"
+      ]
+    },
+    "Vite.AspNetCore.Abstractions/1.1.0": {
+      "sha512": "glEvkFhzw/BpwpvXzEaPRKJq2C6qEhjUugAg3e3tXBcVr1ZIAqDCOj3KzsVQpTNUKutWvQ9kGJXvIIn5fFo1YQ==",
+      "type": "package",
+      "path": "vite.aspnetcore.abstractions/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/Vite.AspNetCore.Abstractions.dll",
+        "vite.aspnetcore.abstractions.1.1.0.nupkg.sha512",
+        "vite.aspnetcore.abstractions.nuspec",
+        "vite.png"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "INERTIAJS.ASPNETCORE.ADAPTER >= 0.0.4",
+      "Vite.AspNetCore >= 1.11.0"
+    ]
   },
   "packageFolders": {
     "/Users/mbex71/.nuget/packages/": {}
@@ -43,6 +126,16 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "INERTIAJS.ASPNETCORE.ADAPTER": {
+            "target": "Package",
+            "version": "[0.0.4, )"
+          },
+          "Vite.AspNetCore": {
+            "target": "Package",
+            "version": "[1.11.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

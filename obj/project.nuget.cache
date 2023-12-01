@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "+3EWwzqr24Y8w1Rl27GTIRo88kflPcJ2yphg3b6JaRKa6Xw03kgZKLoSP1RHV1lfCZCtzs5yLwz5w3eUdFeKMw==",
+  "dgSpecHash": "7a3RBz4tg8Erd7038tpsO1dCS2CSkQYORsvJTPyCgbFnickqLZT5xBcxQpCm+MONHLDS1AAN8gu1eAlIWCywyA==",
   "success": true,
   "projectFilePath": "/Users/mbex71/Documents/projects/ExampleNet/ExampleNet.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/mbex71/.nuget/packages/inertiajs.aspnetcore.adapter/0.0.4/inertiajs.aspnetcore.adapter.0.0.4.nupkg.sha512",
+    "/Users/mbex71/.nuget/packages/vite.aspnetcore/1.11.0/vite.aspnetcore.1.11.0.nupkg.sha512",
+    "/Users/mbex71/.nuget/packages/vite.aspnetcore.abstractions/1.1.0/vite.aspnetcore.abstractions.1.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

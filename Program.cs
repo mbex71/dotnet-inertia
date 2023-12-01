@@ -1,7 +1,10 @@
+using InertiaAdapter.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddInertia();
 
 var app = builder.Build();
 
@@ -13,10 +16,12 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseInertia();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
 
 app.UseAuthorization();
 

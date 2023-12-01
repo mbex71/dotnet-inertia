@@ -2,14 +2,8 @@
   "name": "examplenet",
   "module": "App/index.ts",
   "type": "module",
-  "scripts": {
-    "build": "vite build",
-    "dev": "vite run dev"
-  },
   "devDependencies": {
-    "@vitejs/plugin-react-swc": "^3.5.0",
-    "bun-types": "latest",
-    "vite": "^5.0.4"
+    "bun-types": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"

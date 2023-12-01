@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="INERTIAJS.ASPNETCORE.ADAPTER" Version="0.0.4" />
+    <PackageReference Include="Vite.AspNetCore" Version="1.11.0" />
+  </ItemGroup>
+
 </Project>
